@@ -1,11 +1,11 @@
 # the minimum version of CMake.
-cmake_minimum_required(VERSION 3.4.1)
-project(MyApplication)
 
-set(NATIVERENDER_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+cmake_minimum_required(VERSION 3.8)
 
-include_directories(${NATIVERENDER_ROOT_PATH}
-                    ${NATIVERENDER_ROOT_PATH}/include)
+option(APP_NAME "Project Name" "test-cases")
+project(${APP_NAME} CXX)
 
-add_library(entry SHARED hello.cpp)
-target_link_libraries(entry PUBLIC libace_napi.z.so)
+set(CMAKE_CXX_FLAGS_DEBUG  "-Werror=return-type")
+
+
+include(${COMMON_DIR}/CMakeLists.txt)

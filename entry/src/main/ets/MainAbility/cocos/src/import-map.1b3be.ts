@@ -1,0 +1,6 @@
+export default {
+  "imports": {
+    "cc": "./cocos-js/cc.js",
+    "wait-for-ammo-instantiation": "./cocos-js/wait-for-ammo-instantiation.js"
+  }
+}
