@@ -2,7 +2,7 @@
   "apiType": 'faMode',
   "buildOption": {
     "externalNativeOptions": {
-      "path": "./src/main/cpp/CMakeLists.txt",
+      "path": "../CMakeLists.txt",
       "arguments": "-v -DOHOS_STL=c++_shared -DRES_DIR=C:\\Users\\pp\\Desktop\\OpenHarmony\\native -DCOMMON_DIR=C:\\Users\\pp\\Desktop\\OpenHarmony\\native\\common",
       "abiFilters": [
         "armeabi-v7a"
