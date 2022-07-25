@@ -16,7 +16,7 @@
 import worker from '@ohos.worker';
 import nativerender from "libcocos2d.so";
 import { ContextType } from "../common/Constants"
-import { log } from '../cocos/log_utils';
+import console, { log } from '../cocos/log_utils';
 import { launchEngine } from '../cocos/game'
 
 console.log("cocos worker: New Worker Thread")
